@@ -765,6 +765,13 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     padding:10px;
     color: #bfbfc1;
 }
+.nl-toggle-messages {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.nl-toggle-messages .fa-bars { padding: 8px; color: #000; }
 /*right sidebar*/
 .right-sidebar {
     background:#32323A;
@@ -5950,10 +5957,9 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 
 .toggle-right-box .badge {
-      position: absolute;
-  top: -9px;
-  right: -7px;
-
+    position: absolute;
+    top: -9px;
+    right: -7px;
 }
 
 
