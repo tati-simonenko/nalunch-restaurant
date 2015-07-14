@@ -2723,6 +2723,7 @@ ul.amounts li.grand-total {
     -webkit-border-radius:5px;
     vertical-align:middle;
 }
+.table-invoice tr td:nth-child(1) { width: 50px; }
 .invoice-block {
     text-align:right;
 }
@@ -5782,6 +5783,12 @@ input:focus { border: 1px solid #F99A00!important; }
 }
 .btn-nalunch:hover {
     color: #fff;
+    background-color: #ee9616;
+}
+.btn-nalunch:active,
+.btn-nalunch:focus {
+     color: #fff;
+    background-color: #e28d11;
 }
 
 .nl-js-display-none { display: none; transition:all 1s; }
@@ -5818,7 +5825,7 @@ input:focus { border: 1px solid #F99A00!important; }
     width: 125px !important;
 }
 .nl-table-dishes a:hover { text-decoration: underline; }
-
+.nl-dishes table a:hover { text-decoration: underline; }
 .nl-dishes-search { margin-bottom: 20px; }
 .nl-dishes-search .dataTables_filter { padding: 0; }
 .nl-dishes-search .dataTables_filter label input { width: 84%; }
@@ -5852,6 +5859,31 @@ input:focus { border: 1px solid #F99A00!important; }
 .transaction-range input { padding: 4px 12px !important; }
 .nl-tracsations-dates { padding-left: 1px; }
 
+/*колонки для транзакций, так как в бутстрапе не помещается*/
+
+.nl-filter-date,
+.nl-filter-place,
+.transaction-range,
+.nl-tracsations-dates {
+    display: inline-block;
+    vertical-align: top;
+}
+.nl-filter-date { width: 46%; }
+.nl-filter-place { width: 52%; text-align: right; }
+.nl-tracsations-dates { width: 30%; }
+.nl-filter-date .transaction-range { width: 65%; }
+
+.nl-filter-place .btn-group { margin-left: 20px; margin-bottom: 10px; }
+
+@media (max-width: 1300px) {
+    .nl-filter-date { width: 70%; }
+    .nl-filter-place { width: 100%; }
+    .nl-filter-place { text-align: left; }
+    .nl-filter-place .btn-group { margin-left: 0; margin-right: 20px; }
+}
+@media (max-width: 1000px) {
+    .nl-filter-date { width: 100%; }
+}
 
 /*menu*/
 
@@ -5873,6 +5905,10 @@ input:focus { border: 1px solid #F99A00!important; }
 }
 .nl-places-select p { margin-bottom: 3px; }
 p.nl-places-select__title { margin-bottom: 10px; }
+.nl-places-select--clients { margin-bottom: 25px; }
+.nl-places-select--clients .tagsinput { min-height: 35px !important; height: 35px !important; }
+.nl-places-select--clients .tagsinput span.tag { padding: 3px 6px !important; }
+.nl-places-select--clients #tags_1_tag { padding-top: 2px; }
 .nl-menu__choose-date { margin-bottom: 4px; }
 .nl-menu__choose input:focus { border: 1px solid #F99A00!important; }
 
@@ -5928,15 +5964,19 @@ p.nl-places-select__title { margin-bottom: 10px; }
     font-size: 13px;
     font-family: 'Open Sans',sans-serif;
     color: #767676;
-    text-transform: none;
     margin-bottom: 0;
  }
  .nl-order-tab-pane .nl-icon-up { margin-right: 15px; }
 .nl-order-archive-item .table-invoice { margin-top: 0; }
 .nl-archive-dataTables_filter { width: 100%; float: none; padding-top: 0; }
 .nl-archive-dataTables_filter input { display: inline-block; margin-left: 20px; width: 84%; }
-.nl-order-filter .panel-heading { font-weight: normal; text-transform: none; color: #767676;}
+.nl-order-filter .panel-heading { font-weight: normal; text-transform: uppercase; color: #767676;}
 .nl-order-archive-item .fa-chevron-up { opacity: 0.35; }
+.nl-archive-pagination .pagination-text { display: inline-block; width: 80px; }
+.nl-archive-pagination .dataTables_length select { display: inline-block; }
+.nl-archive-pagination .dataTables_length { padding: 0; }
+.nl-archive-pagination .dataTables_info { padding-top: 5px; }
+.nl-archive-pagination .dataTables_paginate.paging_bootstrap.pagination { margin-top: -15px; }
 
 /*clients*/
 

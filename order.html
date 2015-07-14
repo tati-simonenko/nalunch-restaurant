@@ -274,162 +274,328 @@
                     </header>
                     <div class="panel-body">
                         <div class="tab-content tasi-tab">
+
+                            <!-- первый таб -->
+
                             <div id="overview" class="tab-pane active">
-                                <div class="panel-body invoice">
-                        <!-- <div class="invoice-header">
-                            <div class="invoice-title col-md-3 col-xs-2">
-                                <h1>invoice</h1>
-                                <img class="logo-print" src="images/bucket-logo.png" alt="">
-                            </div>
-                            <div class="invoice-info col-md-9 col-xs-10">
 
-                                <div class="pull-right">
-                                    <div class="col-md-6 col-sm-6 pull-left">
-                                        <p>121 King Street, Melbourne <br>
-                                            Victoria 3000 Australia</p>
+                                <!-- один заказ -->
+
+                                <section class="panel">
+                                    <header class="panel-heading">
+                                        i-Free, c 17.05-22.05
+                                        <span class="tools pull-right">
+                                            <a class="fa fa-print"></a>
+                                            <a class="fa fa-chevron-down"></a>
+                                         </span>
+                                    </header>
+                                    <div class="panel-body">
+                                        <div class="panel-body invoice">
+                       
+                                            <div class="nl-invoice-wrap">
+                                                <div class="row invoice-to nl-invoice-to">
+                                                    <div class="col-md-12">
+                                                        <h4>Заказ сформирован:</h4>
+                                                        <div class="nl-invoice-info">
+                                                            <h2>i-Free, 17.06.2015</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row invoice-to nl-invoice-to">
+                                                <div class="col-md-7 col-sm-6">
+                                                    <p>
+                                                        Адрес: Большой пр. П.С., 29а<br>
+                                                        Время доставки: c 14:00 до 14:30<br>
+                                                        Приборы: 10 шт<br>
+                                                        Контактное лицо для курьера : Мария, 8 921 777 06 97
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4 col-sm-5 nl-invoice-total">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-5 inv-label">Дата заказа</div>
+                                                        <div class="col-md-5 col-sm-7">17.06.2015</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-5 inv-label">Всего заказов</div>
+                                                        <div class="col-md-5 col-sm-7">45</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 inv-label">
+                                                            <h4>Общая сумма</h4>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <h2 class="amnt-value">13 600 Р</h2>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th></th>
+                                                    <th class="text-center">Заказ оформили</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Понедельник 20 апреля</h5>
+                                                    </td>
+                                                    <td class="text-center">13 чел.</td>
+                                                    <td class="text-center">2 014,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Вторник 21 апреля</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="text-center">13 чел.</td>
+                                                    <td class="text-center">2 014,00 Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Воскресенье 27 апреля</h5>
+                                                    </td>
+                                                    <td class="text-center">0 чел.</td>
+                                                    <td class="text-center">0,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                            
+
+                                            <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Вторник</th>
+                                                    <th class="text-center">Состав заказа</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Петров</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="">не питаюсь</td>
+                                                    <td class="text-center">- Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                                                <div class="col-md-8 col-xs-7 payment-method">
+                                                    <!-- <h4>Payment Method</h4> -->
+                                                    <p>Клиент может скорректировать заказ на любой из дней доставки не позднее 17-00, текущего дня. Скорректированный заказ будет отправлен вам на почту, не позднее 17-30 текущего дня.</p>  
+                                                    <h4 class="inv-label itatic">Спасибо, что воспользовались сервисом — <a class="inv-label itatic" href="https://nalunch.ru/">www.nalunch.ru</a></h4>                              
+                                                </div>
+                                                <div class="col-md-4 col-xs-5 invoice-block pull-right">
+                                                    <ul class="unstyled amounts nl-amounts">
+                                                        <li>Общая сумма заказа: 13 655,00 Р</li>
+                                                        <!-- <li class="grand-total">Grand Total : $7145</li> -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center invoice-btn">
+                                                <a class="btn btn-info btn-lg"><i class="fa fa-check"></i> Заказ получен</a>
+                                                <a href="" target="_blank" class="btn btn-nalunch btn-lg"><i class="fa fa-print"></i> Распечать</a>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 pull-right">
-                                        <p>Phone: +61 3 8376 6284 <br>
-                                            Email : info@envato.com</p>
+                                </section>
+
+                                <!-- следующий заказ -->
+
+                                <section class="panel">
+                                    <header class="panel-heading">
+                                        i-Free, c 17.05-22.05
+                                        <span class="tools pull-right">
+                                            <a class="fa fa-print"></a>
+                                            <a class="fa fa-chevron-down"></a>
+                                         </span>
+                                    </header>
+                                    <div class="panel-body">
+                                        <div class="panel-body invoice">
+                       
+                                            <div class="nl-invoice-wrap">
+                                                <div class="row invoice-to nl-invoice-to">
+                                                    <div class="col-md-12">
+                                                        <h4>Заказ сформирован:</h4>
+                                                        <div class="nl-invoice-info">
+                                                            <h2>i-Free, 17.06.2015</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row invoice-to nl-invoice-to">
+                                                <div class="col-md-7 col-sm-6">
+                                                    <p>
+                                                        Адрес: Большой пр. П.С., 29а<br>
+                                                        Время доставки: c 14:00 до 14:30<br>
+                                                        Приборы: 10 шт<br>
+                                                        Контактное лицо для курьера : Мария, 8 921 777 06 97
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4 col-sm-5 nl-invoice-total">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-5 inv-label">Дата заказа</div>
+                                                        <div class="col-md-5 col-sm-7">17.06.2015</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-5 inv-label">Всего заказов</div>
+                                                        <div class="col-md-5 col-sm-7">45</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 inv-label">
+                                                            <h4>Общая сумма</h4>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <h2 class="amnt-value">13 600 Р</h2>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th></th>
+                                                    <th class="text-center">Заказ оформили</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Понедельник 20 апреля</h5>
+                                                    </td>
+                                                    <td class="text-center">13 чел.</td>
+                                                    <td class="text-center">2 014,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Вторник 21 апреля</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="text-center">13 чел.</td>
+                                                    <td class="text-center">2 014,00 Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Воскресенье 27 апреля</h5>
+                                                    </td>
+                                                    <td class="text-center">0 чел.</td>
+                                                    <td class="text-center">0,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                            
+
+                                            <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Вторник</th>
+                                                    <th class="text-center">Состав заказа</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Петров</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="">не питаюсь</td>
+                                                    <td class="text-center">- Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                                                <div class="col-md-8 col-xs-7 payment-method">
+                                                    <!-- <h4>Payment Method</h4> -->
+                                                    <p>Клиент может скорректировать заказ на любой из дней доставки не позднее 17-00, текущего дня. Скорректированный заказ будет отправлен вам на почту, не позднее 17-30 текущего дня.</p>  
+                                                    <h4 class="inv-label itatic">Спасибо, что воспользовались сервисом — <a class="inv-label itatic" href="https://nalunch.ru/">www.nalunch.ru</a></h4>                              
+                                                </div>
+                                                <div class="col-md-4 col-xs-5 invoice-block pull-right">
+                                                    <ul class="unstyled amounts nl-amounts">
+                                                        <li>Общая сумма заказа: 13 655,00 Р</li>
+                                                        <!-- <li class="grand-total">Grand Total : $7145</li> -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center invoice-btn">
+                                                <a class="btn btn-info btn-lg"><i class="fa fa-check"></i> Заказ получен</a>
+                                                <a href="" target="_blank" class="btn btn-nalunch btn-lg"><i class="fa fa-print"></i> Распечать</a>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                </div>
+                                </section>
 
+
+                                
                             </div>
-                        </div> -->
-                        <div class="row invoice-to nl-invoice-to">
-                            <div class="col-md-7 col-sm-6">
-                                <h4>Заказ сформирован:</h4>
-                                <div class="nl-invoice-info">
-                                    <h2>i-Free, 17.06.2015</h2>
-                                </div>
-                                <p>
-                                    Санкт-Петербург, Адрес: Большой пр. П.С., 29а<br>
-                                    Время доставки: c 14:00 до 14:30<br>
-                                    Приборы: 10 шт<br>
-                                    Контактное лицо для курьера : Мария, 8 921 777 06 97
-                                </p>
-                            </div>
-                            <div class="col-md-4 col-sm-5 nl-invoice-total">
-                                <div class="row">
-                                    <div class="col-md-7 col-sm-5 inv-label">Дата формирования заказа</div>
-                                    <div class="col-md-5 col-sm-7">17.06.2015</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-7 col-sm-5 inv-label">Всего заказов</div>
-                                    <div class="col-md-5 col-sm-7">45</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-7 inv-label">
-                                        <h4>Общая сумма</h4>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <h2 class="amnt-value">13 600 Р</h2>
-                                    </div>
-                                </div>
 
 
-                            </div>
-                        </div>
-                        <table class="table table-invoice" >
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th></th>
-                                <th class="text-center">Заказ оформили</th>
-                                <th class="text-center">Сумма заказа</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <h5>Понедельник 20 апреля</h5>
-                                </td>
-                                <td class="text-center">13 чел.</td>
-                                <td class="text-center">2 014,00 Р</td>
-                            </tr>
-                            <tr class="nl-alert-warning">
-                                <td>2</td>
-                                <td>
-                                    <h5>Вторник 21 апреля</h5>
-                                    <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
-                                </td>
-                                <td class="text-center">13 чел.</td>
-                                <td class="text-center">2 014,00 Р</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <h5>Воскресенье 27 апреля</h5>
-                                </td>
-                                <td class="text-center">0 чел.</td>
-                                <td class="text-center">0,00 Р</td>
-                            </tr>
+                            <!-- второй таб -->
 
-                            </tbody>
-                        </table>
-                        
-
-                        <table class="table table-invoice" >
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Вторник</th>
-                                <th class="text-center">Состав заказа</th>
-                                <th class="text-center">Сумма заказа</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <h5>Иванов</h5>
-                                </td>
-                                <td class="">блюдо 1, блюдо 2, блюдо 3</td>
-                                <td class="text-center">200,00 Р</td>
-                            </tr>
-                            <tr class="nl-alert-warning">
-                                <td>2</td>
-                                <td>
-                                    <h5>Петров</h5>
-                                    <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
-                                </td>
-                                <td class="">не питаюсь</td>
-                                <td class="text-center">- Р</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <h5>Иванов</h5>
-                                </td>
-                                <td class="">блюдо 1, блюдо 2, блюдо 3</td>
-                                <td class="text-center">200,00 Р</td>
-                            </tr>
-
-                            </tbody>
-                        </table>
-
-                        <div class="row">
-                            <div class="col-md-8 col-xs-7 payment-method">
-                                <!-- <h4>Payment Method</h4> -->
-                                <p>Клиент может скорректировать заказ на любой из дней доставки не позднее 17-00, текущего дня. Скорректированный заказ будет отправлен вам на почту, не позднее 17-30 текущего дня.</p>  
-                                <h4 class="inv-label itatic">Спасибо, что воспользовались сервисом — <a class="inv-label itatic" href="https://nalunch.ru/">www.nalunch.ru</a></h4>                              
-                            </div>
-                            <div class="col-md-4 col-xs-5 invoice-block pull-right">
-                                <ul class="unstyled amounts nl-amounts">
-                                    <li>Общая сумма заказа: 13 655,00 Р</li>
-                                    <!-- <li class="grand-total">Grand Total : $7145</li> -->
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="text-center invoice-btn">
-                            <a class="btn btn-info btn-lg"><i class="fa fa-check"></i> Принять заказ</a>
-                            <a href="" target="_blank" class="btn btn-warning btn-lg"><i class="fa fa-print"></i> Распечать</a>
-                        </div>
-
-                    </div>
-                            </div>
                             <div id="archive" class="tab-pane nl-order-tab-pane">
 
                                 <div class="row nl-order-filter">
@@ -441,33 +607,36 @@
                                                     <a class="fa fa-chevron-up"></a>
                                                  </span>
                                             </header>
-                                            <div class="panel-body" >
-                                                <div class="row">
-                                                    <div class="col-xs-6">
+                                            <div class="panel-body">
+                                                <div class="nl-filter-row">
+                                                    <div class="nl-filter-date">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-3 tracsations-dates nl-tracsations-dates">Выберите даты</label>
-                                                            <div class="col-md-9 transaction-range">
-                                                                <div class="input-group input-large " data-date="13/07/2013" data-date-format="mm/dd/yyyy">
-                                                                    <input type="text" class="form-control dpd1" name="from">
+                                                            <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
+                                                            <div class="transaction-range">
+                                                                <div class="input-group input-large " data-date="06/16/2015" data-date-format="mm/dd/yyyy">
+                                                                    <input type="text" class="form-control dpd1" name="from" >
                                                                     <span class="input-group-addon">по</span>
-                                                                    <input type="text" class="form-control dpd2" name="to">
+                                                                    <input type="text" class="form-control dpd2" name="to" >
                                                                 </div>
                                                                 
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-xs-6">
+                                                    <div class="nl-filter-place">
                                                         <div class="dataTables_filter nl-archive-dataTables_filter">
                                                             <label for="">
                                                                 Поиск <input type="text" class="form-control" aria-controls="dynamic-table">
                                                             </label>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="row">&nbsp;</div>
+                                                <div class="row">
                                                     <div class="col-xs-12">
                                                         <button type="button" class="btn btn-warning">Фильтровать</button>
                                                     </div>
-
                                                 </div>
+                                                
                                                 
                                             </div>
                                         </section>
@@ -480,15 +649,12 @@
                                             <header class="panel-heading">
                                                 <div class="row">
                                                      <div class="col-md-3">
-                                                        <p>i-Free</p>
-                                                        <p>Заказ на 2.07-5.07.2015</p>
+                                                        <p>i-Free, 2.07-5.07.2015</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <p>Общая сумма: 13 600,00 Р</p>
+                                                        <p>Заказ на: 13 600 рублей, 6 человек</p>
                                                     </div>
-                                                    
-                                                      
-                                                        <span class="fa fa-chevron-up pull-right nl-icon-up"></span>
+                                                    <span class="fa fa-chevron-up pull-right nl-icon-up"></span>
                                                 </div>
                                                
                                             </header>
@@ -532,19 +698,59 @@
                                                     </tbody>
                                                 </table>
 
-                                                <div class="row">
-                                                    <div class="col-md-8 col-xs-7 payment-method">
-                                                                              
-                                                    </div>
-                                                    <div class="col-md-4 col-xs-5 invoice-block pull-right">
-                                                        <ul class="unstyled amounts nl-amounts">
-                                                            <li>Общая сумма заказа: 13 655,00 Р</li>
-                                                            <!-- <li class="grand-total">Grand Total : $7145</li> -->
-                                                        </ul>
-                                                    </div>
+                                                <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Вторник</th>
+                                                    <th class="text-center">Состав заказа</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Петров</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="">не питаюсь</td>
+                                                    <td class="text-center">- Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                                                <div class="col-md-8 col-xs-7 payment-method">                          
+                                                </div>
+                                                <div class="col-md-4 col-xs-5 invoice-block pull-right">
+                                                    <ul class="unstyled amounts nl-amounts">
+                                                        <li>Общая сумма заказа: 13 655,00 Р</li>
+                                                        <!-- <li class="grand-total">Grand Total : $7145</li> -->
+                                                    </ul>
                                                 </div>
                                             </div>
+                                            </div>
                                         </section>
+
+
                                     
                                     </div>
                                 </div>
@@ -555,15 +761,12 @@
                                             <header class="panel-heading">
                                                 <div class="row">
                                                      <div class="col-md-3">
-                                                        <p>i-Free</p>
-                                                        <p>Заказ на 2.07-5.07.2015</p>
+                                                        <p>i-Free, 2.07-5.07.2015</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <p>Общая сумма: 13 600,00 Р</p>
+                                                        <p>Заказ на: 13 600 рублей, 6 человек</p>
                                                     </div>
-                                                    
-                                                      
-                                                        <span class="fa fa-chevron-up pull-right nl-icon-up"></span>
+                                                    <span class="fa fa-chevron-up pull-right nl-icon-up"></span>
                                                 </div>
                                                
                                             </header>
@@ -607,19 +810,59 @@
                                                     </tbody>
                                                 </table>
 
-                                                <div class="row">
-                                                    <div class="col-md-8 col-xs-7 payment-method">
-                                                                              
-                                                    </div>
-                                                    <div class="col-md-4 col-xs-5 invoice-block pull-right">
-                                                        <ul class="unstyled amounts nl-amounts">
-                                                            <li>Общая сумма заказа: 13 655,00 Р</li>
-                                                            <!-- <li class="grand-total">Grand Total : $7145</li> -->
-                                                        </ul>
-                                                    </div>
+                                                <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Вторник</th>
+                                                    <th class="text-center">Состав заказа</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Петров</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="">не питаюсь</td>
+                                                    <td class="text-center">- Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                                                <div class="col-md-8 col-xs-7 payment-method">                          
+                                                </div>
+                                                <div class="col-md-4 col-xs-5 invoice-block pull-right">
+                                                    <ul class="unstyled amounts nl-amounts">
+                                                        <li>Общая сумма заказа: 13 655,00 Р</li>
+                                                        <!-- <li class="grand-total">Grand Total : $7145</li> -->
+                                                    </ul>
                                                 </div>
                                             </div>
+                                            </div>
                                         </section>
+
+
                                     
                                     </div>
                                 </div>
@@ -630,15 +873,12 @@
                                             <header class="panel-heading">
                                                 <div class="row">
                                                      <div class="col-md-3">
-                                                        <p>i-Free</p>
-                                                        <p>Заказ на 2.07-5.07.2015</p>
+                                                        <p>i-Free, 2.07-5.07.2015</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <p>Общая сумма: 13 600,00 Р</p>
+                                                        <p>Заказ на: 13 600 рублей, 6 человек</p>
                                                     </div>
-                                                    
-                                                      
-                                                        <span class="fa fa-chevron-up pull-right nl-icon-up"></span>
+                                                    <span class="fa fa-chevron-up pull-right nl-icon-up"></span>
                                                 </div>
                                                
                                             </header>
@@ -682,23 +922,196 @@
                                                     </tbody>
                                                 </table>
 
-                                                <div class="row">
-                                                    <div class="col-md-8 col-xs-7 payment-method">
-                                                                              
-                                                    </div>
-                                                    <div class="col-md-4 col-xs-5 invoice-block pull-right">
-                                                        <ul class="unstyled amounts nl-amounts">
-                                                            <li>Общая сумма заказа: 13 655,00 Р</li>
-                                                            <!-- <li class="grand-total">Grand Total : $7145</li> -->
-                                                        </ul>
-                                                    </div>
+                                                <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Вторник</th>
+                                                    <th class="text-center">Состав заказа</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Петров</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="">не питаюсь</td>
+                                                    <td class="text-center">- Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                                                <div class="col-md-8 col-xs-7 payment-method">                          
+                                                </div>
+                                                <div class="col-md-4 col-xs-5 invoice-block pull-right">
+                                                    <ul class="unstyled amounts nl-amounts">
+                                                        <li>Общая сумма заказа: 13 655,00 Р</li>
+                                                        <!-- <li class="grand-total">Grand Total : $7145</li> -->
+                                                    </ul>
                                                 </div>
                                             </div>
+                                            </div>
                                         </section>
+
+
                                     
                                     </div>
                                 </div>
 
+                                <div class="row nl-order-archive-item">
+                                    <div class="col-md-12">
+                                        <section class="panel">
+                                            <header class="panel-heading">
+                                                <div class="row">
+                                                     <div class="col-md-3">
+                                                        <p>i-Free, 2.07-5.07.2015</p>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <p>Заказ на: 13 600 рублей, 6 человек</p>
+                                                    </div>
+                                                    <span class="fa fa-chevron-up pull-right nl-icon-up"></span>
+                                                </div>
+                                               
+                                            </header>
+                                            <div class="panel-body" style="display:none;">
+                                                <table class="table table-invoice" >
+                                                    <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Вторник</th>
+                                                        <th class="text-center">Состав заказа</th>
+                                                        <th class="text-center">Сумма заказа</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <h5>Иванов</h5>
+                                                        </td>
+                                                        <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                        <td class="text-center">200,00 Р</td>
+                                                    </tr>
+                                                    <tr class="nl-alert-warning">
+                                                        <td>2</td>
+                                                        <td>
+                                                            <h5>Петров</h5>
+                                                            <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                        </td>
+                                                        <td class="">не питаюсь</td>
+                                                        <td class="text-center">- Р</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <h5>Иванов</h5>
+                                                        </td>
+                                                        <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                        <td class="text-center">200,00 Р</td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                                <table class="table table-invoice" >
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Вторник</th>
+                                                    <th class="text-center">Состав заказа</th>
+                                                    <th class="text-center">Сумма заказа</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+                                                <tr class="nl-alert-warning">
+                                                    <td>2</td>
+                                                    <td>
+                                                        <h5>Петров</h5>
+                                                        <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                    </td>
+                                                    <td class="">не питаюсь</td>
+                                                    <td class="text-center">- Р</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <h5>Иванов</h5>
+                                                    </td>
+                                                    <td class="">блюдо 1, блюдо 2, блюдо 3</td>
+                                                    <td class="text-center">200,00 Р</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                                                <div class="col-md-8 col-xs-7 payment-method">                          
+                                                </div>
+                                                <div class="col-md-4 col-xs-5 invoice-block pull-right">
+                                                    <ul class="unstyled amounts nl-amounts">
+                                                        <li>Общая сумма заказа: 13 655,00 Р</li>
+                                                        <!-- <li class="grand-total">Grand Total : $7145</li> -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </section>
+
+
+                                    
+                                    </div>
+                                </div>
+
+                                <div class="row nl-archive-pagination">
+                                    <div class="col-xs-2">
+                                        <div class="dataTables_length">
+                                            <label>
+                                                <select size="1" name="editable-sample_length" aria-controls="editable-sample" class="form-control xsmall">
+                                                <option value="5">20</option>
+                                                <option value="15" selected="selected">50</option>
+                                                <option value="20">100</option>
+                                                <option value="-1">Все</option>
+                                                </select> 
+                                                <span class="pagination-text">на странице</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="dataTables_info">Показано 1 по 5 из 28</div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← Предыдущая</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Следующая → </a></li></ul></div>
+                                    </div>
+                                </div>
 
 
 
