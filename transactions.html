@@ -220,7 +220,7 @@
                     </a>
                     <ul class="sub">
                         <li class="active" ><a href="transactions.html">Детальный отчет</a></li>
-                        <li><a href="transactions-places.html">Отчет по точкам</a></li>
+                        <li><a href="transactions-places.html">Отчет по ресторанам</a></li>
                     </ul>
                 </li>
 
@@ -271,21 +271,21 @@
                          </span>
                     </header>
                     <div class="panel-body" >
-                        <div class="row">
-                            <div class="col-xs-6">
+                        <div class="nl-filter-row">
+                            <div class="nl-filter-date">
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 tracsations-dates nl-tracsations-dates">Выберите даты</label>
-                                    <div class="col-md-9 transaction-range">
-                                        <div class="input-group input-large " data-date="13/07/2013" data-date-format="mm/dd/yyyy">
-                                            <input type="text" class="form-control dpd1" name="from">
+                                    <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
+                                    <div class="transaction-range">
+                                        <div class="input-group input-large " data-date="06/16/2015" data-date-format="mm/dd/yyyy">
+                                            <input type="text" class="form-control dpd1" name="from" value="01/16/2015">
                                             <span class="input-group-addon">по</span>
-                                            <input type="text" class="form-control dpd2" name="to">
+                                            <input type="text" class="form-control dpd2" name="to" value="06/16/2015">
                                         </div>
                                         
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-3">
+                            <div class="nl-filter-place">
                                 <div class="btn-group">
                                     <button class="btn btn-white" type="button">Показать все точки питания</button>
                                     <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
@@ -293,26 +293,19 @@
                                         <li><a href="#">"Pizza Ollis", Кронверкский пр. д. 61/28</a></li>
                                         <li><a href="#">"Pizza Ollis", Кронверкский пр. д. 61/28</a></li>
                                         <li><a href="#">"Pizza Ollis", Кронверкский пр. д. 61/28</a></li>
-                                        
                                     </ul>
                                 </div><!-- /btn-group -->
-                            </div>
-
-                            <div class="col-xs-3">
                                 <div class="btn-group">
                                     <button class="btn btn-white" type="button">Показать все транзакции</button>
                                     <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
                                     <ul role="menu" class="dropdown-menu">
                                         <li><a href="#">Только успешные</a></li>
-                                        <li><a href="#">Только ошибочные</a></li>                                        
+                                        <li><a href="#">Только ошибочные</a></li>  
                                     </ul>
                                 </div><!-- /btn-group -->
                             </div>
-
-                            
-
                         </div>
-                        <div class="row">&nbsp;</div>
+
                         <div class="row">
                             <div class="col-xs-12">
                                 <button type="button" class="btn btn-warning">Фильтровать</button>
@@ -331,7 +324,7 @@
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        Транзакции
+                        Транзакции: детальный отчет
                     </header>
                     <div class="panel-body">
                         <div class="adv-table editable-table nl-transactions">

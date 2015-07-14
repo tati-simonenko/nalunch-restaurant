@@ -21,7 +21,15 @@ ul, .list-unstyled {
     padding-left: 30px;
 }
 ul li {
-    /*list-style:none;*/
+    /*list-style:none;*/\
+    color: #32323A;
+}
+li {
+    color: #32323A;
+}
+
+p {
+    color: #32323A;
 }
 
 a,a:hover,a:focus {
@@ -2350,7 +2358,7 @@ ul.inbox-pagination li {
     padding-right:30px;
 }
 .profile-information .profile-desk h1 {
-    color:#31708f;
+    color:#57c8f1;
     font-size:24px;
     font-weight:bold;
     margin-bottom:0;
@@ -2940,6 +2948,8 @@ ul.amounts li {
 .tab-bg-dark-navy-blue ul>li>a {
     display:block;
     padding:20px 15px !important;
+    font-size: 14px !important;
+    font-weight: bold;
 }
 .tab-bg-dark-navy-blue {
     background:#e0e1e7 !important;
@@ -2951,7 +2961,8 @@ ul.amounts li {
 .tab-bg-dark-navy-blue li a:hover, .tab-bg-dark-navy-blue li.active a {
     border-radius: 0 !important;
     background: #fff !important;
-    color: #31708f !important;
+    color: #57c8f1 !important;
+    font-size: 14px !important;
 }
 .panel-heading .nav>li>a,.panel-heading .nav>li.active>a,.panel-heading .nav>li.active>a:hover,.panel-heading .nav>li.active>a:focus {
     border-width:0;
