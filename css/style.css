@@ -27,8 +27,8 @@ ul li {
 li {
     color: #32323A;
 }
-
-p {
+/*поставим всем элементам темный стандартный цвет*/
+p, td, label, input, div, select, option {
     color: #32323A;
 }
 
@@ -213,6 +213,7 @@ a,a:hover,a:focus {
 .right-side-accordion li:nth-child(2) ul li .prog-row {
     border: none;
 }
+.right-side-accordion i.fa { color: #8f8f9b; }
 /*---*/
 .nav-collapse.collapse {
     display:inline;
@@ -837,6 +838,8 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     padding:20px 0;
     width:100%;
 }
+.prog-row.text-danger i,
+.prog-row.text-danger p { color: #FF6C60; }
 .prog-row .progress {
     margin-bottom:0;
 }
@@ -2640,7 +2643,7 @@ ul.inbox-pagination li {
 }
 /*invoice*/
 .invoice p {
-    color:#aeaeb1;
+    color:#32323A;
     margin-bottom: 0;
 }
 
@@ -2961,8 +2964,15 @@ ul.amounts li {
 .tab-bg-dark-navy-blue li a:hover, .tab-bg-dark-navy-blue li.active a {
     border-radius: 0 !important;
     background: #fff !important;
-    color: #57c8f1 !important;
+    color: #000 !important;
     font-size: 14px !important;
+}
+.nl-tab-bg-dark-navy-blue li a:hover, .tab-bg-dark-navy-blue li.active a {
+    border-radius: 0 !important;
+    background: #3DC9F8 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+      border-bottom-color: #3DC9F8!important;
 }
 .panel-heading .nav>li>a,.panel-heading .nav>li.active>a,.panel-heading .nav>li.active>a:hover,.panel-heading .nav>li.active>a:focus {
     border-width:0;
@@ -5801,12 +5811,13 @@ input:focus { border: 1px solid #F99A00!important; }
      color: #fff;
     background-color: #e28d11;
 }
+.text-small { font-size: 11px; }
 
 .nl-js-display-none { display: none; transition:all 1s; }
 
 .panel-heading {
-    font-weight: 600;
-    color: #000;
+    font-weight: 400;
+    color: #222121;
     cursor: pointer;
 }
 
@@ -5825,13 +5836,17 @@ input:focus { border: 1px solid #F99A00!important; }
 .prog-row .text-danger p {
     color: #FF6C60;
 }
+.nl-day-stats {
+    font-size: 10px;
+    display: block;
+}
+.nl-day-stats:hover { text-decoration: underline; }
 
 /*dishes*/
 
 .nl-dishes tr td:nth-child(1), .nl-dishes tr th:nth-child(1) {
     width: 260px !important;
 }
-
 .nl-dishes tr td:nth-child(6) {
     width: 125px !important;
 }
@@ -5848,6 +5863,7 @@ input:focus { border: 1px solid #F99A00!important; }
 .nl-dishes-categories #tags_1_tag {width: 141px !important;}
 .nl-dishes .form-inline table .form-control { width: 100px !important; }
 .nl-dishes .form-inline table td:nth-child(1) .form-control { width: 150px !important; }
+.nl-btn-add-dish { font-weight: bold; }
 
 #editable-sample_filter {
       position: absolute;
@@ -5915,11 +5931,13 @@ input:focus { border: 1px solid #F99A00!important; }
   right: 7px;
 }
 .nl-places-select p { margin-bottom: 3px; }
-p.nl-places-select__title { margin-bottom: 10px; }
+p.nl-places-select__title { margin-bottom: 10px; font-weight: bold; }
 .nl-places-select--clients { margin-bottom: 25px; }
 .nl-places-select--clients .tagsinput { min-height: 35px !important; height: 35px !important; }
 .nl-places-select--clients .tagsinput span.tag { padding: 3px 6px !important; }
 .nl-places-select--clients #tags_1_tag { padding-top: 2px; }
+.nl-places-select--clients div.tagsinput span.tag { background: #57c8f1 !important; color: #32323A !important; }
+.nl-places-select--clients div.tagsinput span.tag a { color: #32323A !important; }
 .nl-menu__choose-date { margin-bottom: 4px; }
 .nl-menu__choose input:focus { border: 1px solid #F99A00!important; }
 
@@ -5957,8 +5975,13 @@ p.nl-places-select__title { margin-bottom: 10px; }
 /*order*/
 
 .nl-tab-bg-dark-navy-blue li a:hover, .nl-tab-bg-dark-navy-blue li.active a {
-    color: #57c8f1!important;
+    color: #000!important;
 }
+.nl-tab-bg-dark-navy-blue {
+    background: #C7CAD8 !important;
+ }
+.nl-tab-bg-dark-navy-blue li.active a { border-bottom-color: #3DC9F8!important;}
+.nl-tab-bg-dark-navy-blue li.active a:hover { border-bottom-color: #3DC9F8!important;}
 .nl-alert-warning, .nl-alert-warning strong { color: #a94442;}
 .nl-alert-warning h5 { margin-bottom: 0; margin-top: 0; }
 .nl-alert-warning strong { font-size: 11px; }
@@ -5967,14 +5990,14 @@ p.nl-places-select__title { margin-bottom: 10px; }
 .nl-invoice-total { font-size: 13px; font-weight: bold; }
 .nl-invoice-info h2 { font-size: 22px; }
 .nl-invoice-total .amnt-value { font-size: 22px; }
-.nl-invoice-total .row { margin-bottom: 10px; }
+.nl-invoice-total .row { margin-bottom: 6px; }
 .invoice-block ul.nl-amounts li { font-size: 14px; font-weight: bold; }
 .nl-alert-warning td { background-color: #feedec!important; }
 
 .nl-order-tab-pane .panel-heading p { 
     font-size: 13px;
     font-family: 'Open Sans',sans-serif;
-    color: #767676;
+    color: #222121;
     margin-bottom: 0;
  }
  .nl-order-tab-pane .nl-icon-up { margin-right: 15px; }
@@ -6013,6 +6036,12 @@ p.nl-places-select__title { margin-bottom: 10px; }
     right: -7px;
 }
 
+/*order*/
+
+.nl-panel-tabs {
+    padding-top: 20px;
+    background-color: #F1F2F7;
+}
 
 
 
