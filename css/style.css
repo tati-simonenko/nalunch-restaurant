@@ -398,6 +398,63 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     color:rgba(0,0,0,0.3) !important;
     padding-right:8px !important;
 }
+/*select basic style*/
+.nl-select-group {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+.nl-select-group:last-of-type {
+    margin-right: 0;
+}
+.nl-select-group:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(150, 160, 180, 0.3);
+    top: 0;
+    right: 26px;
+}
+select.nl-select {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border-color: rgba(150, 160, 180, 0.3);
+    box-shadow: none;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid rgba(150, 160, 180, 0.3);
+    border-radius: 4px;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    background-image: url(../images/triangle.png);
+    background-repeat: no-repeat;
+    background-position: right 9px top 50%;
+    padding-right: 36px;
+}
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select.nl-select {padding-right:36px}
+}
 .notify-row .badge {
     position:absolute;
     right:-10px;
@@ -5982,6 +6039,7 @@ p.nl-places-select__title { margin-bottom: 10px; font-weight: bold; }
  }
 .nl-tab-bg-dark-navy-blue li.active a { border-bottom-color: #3DC9F8!important;}
 .nl-tab-bg-dark-navy-blue li.active a:hover { border-bottom-color: #3DC9F8!important;}
+.nl-tab-bg-dark-navy-blue .nav-tabs.nav-justified>li>a { border-bottom: 1px solid #C7CAD8;}
 .nl-alert-warning, .nl-alert-warning strong { color: #a94442;}
 .nl-alert-warning h5 { margin-bottom: 0; margin-top: 0; }
 .nl-alert-warning strong { font-size: 11px; }
