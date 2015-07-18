@@ -418,8 +418,11 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     top: 0;
     right: 26px;
 }
-select.nl-select {
+.nl-select-group div.nl-select>a,
+.nl-select-group select.nl-select  {
     max-width: 250px;
+    height: auto;
+    color: #222121;
     background-clip: padding-box;
     background-color: #FFFFFF;
     border-color: rgba(150, 160, 180, 0.3);
@@ -442,7 +445,7 @@ select.nl-select {
     background-image: none;
     border: 1px solid rgba(150, 160, 180, 0.3);
     border-radius: 4px;
-    outline:none;
+    
     display: inline-block;
     -webkit-appearance:none;
     -moz-appearance:none;
@@ -452,11 +455,24 @@ select.nl-select {
     background-repeat: no-repeat;
     background-position: right 9px top 50%;
     padding-right: 36px;
+    outline: none;
 }
+
 /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    select.nl-select {padding-right:36px}
+    .nl-select>a {padding-right:36px}
 }
+/*перезаписываем стили правой части селекта*/
+.nl-select-group .select2-container .select2-choice .select2-arrow {
+    background-image: none;
+  background-color: #fff;
+    width: 23px;
+      border-left: 1px solid rgba(150, 160, 180, 0.3);
+}
+.nl-select-group .select2-container .select2-choice .select2-arrow b {
+    background-position: 2px 4px;
+}
+
 .notify-row .badge {
     position:absolute;
     right:-10px;
@@ -5852,6 +5868,12 @@ right: -1px;
 .align-right { text-align: right; }
 
 /*дополнительные общие стили*/
+
+.nl-btn-drop {
+    display: inline-block;
+    text-decoration: underline;
+    margin-left: 10px;
+}
 
 input { color: #000!important; }
 input:focus { border: 1px solid #F99A00!important; }
