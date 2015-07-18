@@ -5936,6 +5936,34 @@ input:focus { border: 1px solid #F99A00!important; }
 .nl-dishes--head-filter { margin-bottom: 10px; }
 .adv-table.nl-dishes .dataTables_filter label { text-align: right; }
 
+
+.nl-dishes td i {
+    /*float: right;*/
+    line-height: 22px;
+    position: relative;
+}
+
+.fa-info-circle:before { color: #C4C5C6; }
+.fa-info-circle:hover:before { color: #A1A2A3; }
+
+.nl-order__item-info { 
+    display: none; 
+    position: absolute;
+    top: -15px;
+    left: 14px;
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    z-index: 101;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+
+.nl-dishes td i:hover .nl-order__item-info { display: inline-block; }
+.nl-dishes .spinner-input { padding: 17px 12px; }
+
+
 /*транзакции*/
 
 .nl-transactions tr td:nth-child(1), .nl-transactions tr th:nth-child(1) { width: 450px !important; }
