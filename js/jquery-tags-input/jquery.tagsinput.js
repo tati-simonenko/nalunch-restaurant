@@ -103,7 +103,20 @@
                             title : 'Removing tag',
                             text  : 'x'
                         }).click(function () {
-                            return $('#' + id).removeTag(escape(value));
+                        	// result = confirm(question);
+                        	$(this).parent().parent().parent().parent().find(".tag-modal").show();
+                        	if (this.id == 'yes') {
+						        alert('Submit 1 clicked');
+						    }
+						    else if (this.id == 'no') {
+						        alert('Submit 2 clicked');
+						    }
+                        	// if () {
+
+                        	// } else {
+                        	// 	return $('#' + id).removeTag(escape(value));
+                        	// }
+                            
                         })
                     ).insertBefore('#' + id + '_addTag');
 

@@ -4819,6 +4819,7 @@ div.tagsinput span.tag {
 }
 .circle-sat ul {
     text-align:center;
+    padding-left: 0;
 }
 .circle-sat ul li {
     display:inline-block;
@@ -4850,8 +4851,13 @@ div.tagsinput span.tag {
 }
 .right-stat-label .sell-percent {
     color:#36d8c0;
-    padding-top:30px;
+    /*padding-top:30px;*/
     font-size:14px;
+}
+@media (max-width: 1285px) {
+    .circle-sat ul li span.epie-chart {
+        display: none;
+    }
 }
 .spark-bar-label span {
     display:block;
@@ -5985,6 +5991,9 @@ input:focus { border: 1px solid #F99A00!important; }
 .nl-dishes td i:hover .nl-order__item-info { display: inline-block; }
 .nl-dishes .spinner-input { padding: 17px 12px; }
 
+.tag-modal {
+    display: none;
+}
 
 /*транзакции*/
 
