@@ -294,6 +294,21 @@
 
 $( document ).ready(function() {
 
+    
+
+    // lets choose all checkboxes
+
+    $('thead th input[type=checkbox]').click(function() {
+        var c = this.checked;
+        $(':checkbox').prop('checked',c);
+    });
+
+    // dashboard rub
+    $("#graph-area text").css("font-size","10px");
+    $("#graph-area text tspan").append(document.createTextNode(" P"));
+
+    // $("#graph-area tspan").append( "<i class='fa fa-rub'></i>" );
+
     $(".nl-btn-menu").click(function(){
         $(this).parent().find(".nl-table-menu").toggleClass("nl-js-display-none").animate(300);
     });
@@ -310,6 +325,7 @@ $( document ).ready(function() {
     $(".panel-heading").click(function(){
         $(this).parent().find(".panel-body").slideToggle();
     });
+    
 });
 
 
