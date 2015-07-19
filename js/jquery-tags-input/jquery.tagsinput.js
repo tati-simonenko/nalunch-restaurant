@@ -104,14 +104,13 @@
                             text  : 'x'
                         }).click(function () {
                         	// result = confirm(question);
-                        	$(this).parent().parent().parent().parent().find(".tag-modal").show();
-                        	if (this.id == 'yes') {
-						        alert('Submit 1 clicked');
-						    }
-						    else if (this.id == 'no') {
-						        alert('Submit 2 clicked');
-						    }
-                        	// if () {
+
+				                if (confirm("Are you sure to delete this row ?") == false) {
+				                    return;
+				                } else {
+				                return $('#' + id).removeTag(escape(value));
+				            }
+				             // if () {
 
                         	// } else {
                         	// 	return $('#' + id).removeTag(escape(value));
