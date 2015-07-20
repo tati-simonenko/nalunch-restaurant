@@ -295,7 +295,6 @@
 $( document ).ready(function() {
 
     
-
     // lets choose all checkboxes
 
     $('thead th input[type=checkbox]').click(function() {
@@ -325,6 +324,10 @@ $( document ).ready(function() {
     $(".panel-heading").click(function(){
         $(this).parent().find(".panel-body").slideToggle();
     });
+
+    // изменяем текст для тегов клиентов
+
+    
     
 });
 

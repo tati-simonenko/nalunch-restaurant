@@ -6035,6 +6035,7 @@ input:focus { border: 1px solid #F99A00!important; }
 .nl-places-select ul.ms-list { height: 76px !important; }
 .nl-btn-menu { margin-bottom: 5px; }
 .nl-table-menu { margin-bottom: 10px; }
+.nl-table-menu th:last-of-type { min-width: 100px; }
 .nl-table-menu input:focus { border: 1px solid #F99A00!important; }
 .nl-btn-menu-save { margin-top: 15px; }
 .nl-table-menu tr td:nth-child(1) { width: 40% !important; }
@@ -6053,7 +6054,7 @@ p.nl-places-select__title { margin-bottom: 10px; font-weight: bold; }
 .nl-places-select--clients { margin-bottom: 25px; }
 .nl-places-select--clients .tagsinput { min-height: 35px !important; height: 35px !important; }
 .nl-places-select--clients .tagsinput span.tag { padding: 3px 6px !important; }
-.nl-places-select--clients #tags_1_tag { padding-top: 2px; }
+.nl-places-select--clients #tags_1_tag { padding-top: 2px; height: 24px; }
 .nl-places-select--clients div.tagsinput span.tag { background: #57c8f1 !important; color: #32323A !important; }
 .nl-places-select--clients div.tagsinput span.tag a { color: #32323A !important; }
 .nl-menu__choose-date { margin-bottom: 4px; }
@@ -6070,6 +6071,7 @@ p.nl-places-select__title { margin-bottom: 10px; font-weight: bold; }
     .nl-dishes-search .dataTables_filter { width: 100%; }
     .nl-dishes-search > div { margin-bottom: 5px; }
 }
+#tags_1_tag { width: 100%; }
 
 /*profile*/
 

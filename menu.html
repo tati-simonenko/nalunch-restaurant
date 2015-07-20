@@ -359,9 +359,9 @@
                                     
                                     <label class="control-label col-md-3">Клиенты</label>
                                 </div> -->
-                                <div class="col-md-8 nl-places-select nl-places-select--clients">
+                                <div class="col-md-8 nl-places-select nl-places-select--clients" id="nl-places-select--clients">
                                     <p>Добавьте клиентов, которые получат это меню</p>
-                                    <input id="tags_1" type="text" class="tags" value="i-Free,Вконтакте,i-Free,Вконтакте" />
+                                    <input id="tags_1" type="text" class="tags" value="i-Free,Вконтакте,i-Freee,Вконтакт" />
                                     <p class="text-muted text-small">Вы можете удалить лишние компании</p>
                                 </div>
                             </div>
@@ -901,7 +901,7 @@
 
 <script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
 
-<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
+<script src="js/jquery-tags-input-clients/jquery.tagsinput.js"></script>
 
 
 <script src="js/select2/select2.js"></script>
@@ -912,6 +912,15 @@
 <!--dynamic table-->
 <script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+        $("#nl-places-select--clients input#tags_1_tag").attr({"data-default":"добавьте"});
+    });
+
+</script>
+
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
 
@@ -930,7 +939,6 @@
 <!--Easy Pie Chart-->
 <!--Sparkline Chart-->
 <script src="js/iCheck/jquery.icheck.js"></script>
-<script src="js/nl-scripts.js"></script>
 
 
 
