@@ -5911,6 +5911,31 @@ input:focus { border: 1px solid #F99A00!important; }
 .right-side-accordion .widget-collapsible:nth-child(2),
 .right-side-accordion .widget-collapsible:nth-child(3) { display: none; }
 
+/*стили для таблиц*/
+
+.dataTables_length {
+    position: absolute;
+    bottom: -63px;
+}
+.dataTables_info {
+    margin-left: 180px;
+}
+.dataTables_filter {
+      position: absolute;
+  top: -79px;
+  right: 146px;
+}
+.nl-dishes-search__tools {
+    margin-bottom: 30px;
+}
+.dataTables_info {
+    width: 40%;
+}
+select.form-control:active,
+select.form-control:focus {
+    border: 1px solid #ef9d26;
+}
+
 /*рабочий стол*/
 
 .nl-mini-stat .mini-stat-icon { margin-bottom: 27px; }
@@ -6139,17 +6164,9 @@ p.nl-places-select__title { margin-bottom: 10px; font-weight: bold; }
 
 /*styles for table*/
 
-/*.clients-by-company .dataTables_filter {
-      position: absolute;
-  top: -70px;
-  right: 190px;
-  width: 380px;
+.clients-by-company .dataTables_filter input {
+  width: 50%!important;
 }
-
-.clients-by-company .dataTables_length {
-    position: absolute;
-  bottom: -95px;
-}*/
 
 .toggle-right-box .fa-bars:before {
   content: "\f0a2";
