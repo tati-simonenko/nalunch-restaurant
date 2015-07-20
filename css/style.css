@@ -5936,6 +5936,16 @@ select.form-control:focus {
     border: 1px solid #ef9d26;
 }
 
+/*special for dishes*/
+
+.nl-dishes .col-lg-6 {
+    position: static;
+}
+.nl-dishes .dataTables_length {
+  bottom: 47px;
+  z-index: 2;
+}
+
 /*рабочий стол*/
 
 .nl-mini-stat .mini-stat-icon { margin-bottom: 27px; }
