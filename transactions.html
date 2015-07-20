@@ -672,6 +672,7 @@
 <!--Core js-->
 <script src="js/jquery.js"></script>
 <script src="js/jquery-1.10.2.min.js"></script>
+
 <script src="bs3/js/bootstrap.min.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
 <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
@@ -711,6 +712,8 @@
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
 
+
+
 <script src="js/toggle-init.js"></script>
 
 <script src="js/advanced-form.js"></script>
@@ -726,6 +729,12 @@
 
 <script src="js/dynamic_table_init.js"></script>
 
+<script>
+    $(document).ready(function(){
+        $('.dataTables_filter:contains("Search: ") input.form-control').append("<p>text</p>");
+        // $(".adv-table .dataTables_filter").css({"background-color":"red"});
+    });
+</script>
 
 </body>
 </html>

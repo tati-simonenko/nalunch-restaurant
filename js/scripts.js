@@ -317,17 +317,18 @@ $( document ).ready(function() {
     $('.nl-js-chart tspan:contains("2012")').text('Июнь');
     $('.nl-js-chart tspan:contains("2011")').text('Май');
     $('.nl-dishes .dataTables_filter:contains("Search: ")').text('Поиск');
+    $('.dataTables_filter:contains("Search: ")').text('Поиск');
 
     $('.nl-js-chart tspan:contains("2012")').text('июнь');
 
-    $('.nl-dishes label:contains(" records per page")').css("color","red");
+    $('.nl-dishes label:contains(" на странице")').css("color","red");
     $(".panel-heading").click(function(){
         $(this).parent().find(".panel-body").slideToggle();
     });
 
     // изменяем текст для тегов клиентов
 
-    
+
     
 });
 
