@@ -298,8 +298,7 @@ $( document ).ready(function() {
     // lets choose all checkboxes
 
     $('thead th input[type=checkbox]').click(function() {
-        var c = this.checked;
-        $(':checkbox').prop('checked',c);
+        $(this).closest('table').find(':checkbox').prop('checked',this.checked);
     });
 
     // dashboard rub

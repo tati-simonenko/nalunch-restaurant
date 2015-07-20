@@ -30,6 +30,11 @@
 
     <link rel="stylesheet" type="text/css" href="js/select2/select2.css" />
 
+     <!--dynamic table-->
+    <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
@@ -276,31 +281,21 @@
             </div>
         </div>
 
-
-      
-
-        
         <div class="row">
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
                         Транзакции: отчет по ресторанам
+                        <span class="tools pull-right">
+                            <a class="fa fa-chevron-down"></a>
+                         </span>
                     </header>
                     <div class="panel-body">
-                        <div class="adv-table editable-table nl-transactions">
-                            
-                            <div class="row nl-dishes-search">
-                                <div class="col-xs-4">
-                                    
+                        <div class="adv-table">
+                            <div class="row">
+                                <div class="col-xs-9">
                                 </div>
-                                <div class="col-xs-6">
-                                    <div class="dataTables_filter">
-                                        <label for="">
-                                            Поиск <input type="text" class="form-control" aria-controls="dynamic-table">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xs-2 align-right nl-dishes-search__tools">
+                                <div class="col-xs-3 align-right nl-dishes-search__tools">
                                      <button class="btn btn-default dropdown-toggle nl-dishes-tools__toggle" data-toggle="dropdown">Экспортировать <i class="fa fa-angle-down"></i>
                                     </button>
                                     <ul class="dropdown-menu pull-right">
@@ -310,168 +305,181 @@
                                     </ul>
                                 </div>
                             </div>
-                            
-                            
-                            <div class="space15"></div>
-                            <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                            <table  class="display table table-bordered table-striped" id="dynamic-table">
                                 <thead>
-                                <tr>
-                                    <th>Заведения</th>
-                                    <th>Номер карты</th>
-                                    <th>Сумма</th>
-                                    <th>Дата и время</th>
-                                    <th>Тип</th>
-                                </tr>
+                                    <tr>
+                                        <th>Заведения</th>
+                                        <th>Номер карты</th>
+                                        <th>Сумма</th>
+                                        <th>Дата и время</th>
+                                        <th>Тип</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                
-                                
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B)</td>
+                                        <td>1,00р.</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>12,00р.</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>100,00р.</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B)</td>
+                                        <td>1,00р.</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>12,00р.</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>100,00р.</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B)</td>
+                                        <td>1,00р.</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>12,00р.</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>100,00р.</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B)</td>
+                                        <td>1,00р.</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>12,00р.</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>100,00р.</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B)</td>
+                                        <td>1,00р.</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>12,00р.</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>100,00р.</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B)</td>
+                                        <td>1,00р.</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>12,00р.</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>100,00р.</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B)</td>
+                                        <td>1,00р.</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>12,00р.</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>100,00р.</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                        <td>Меню</td>
+                                    </tr>
                                 </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Заведения</th>
+                                        <th>Номер карты</th>
+                                        <th>Сумма</th>
+                                        <th>Дата и время</th>
+                                        <th>Тип</th>
+                                    </tr>
+                                </tfoot>
                             </table>
-                            <div class="row nl-dishes-pagination">
-                                <div class="col-xs-2">
-                                    <div class="dataTables_length">
-                                        <label>
-                                            <select size="1" name="editable-sample_length" aria-controls="editable-sample" class="form-control xsmall">
-                                            <option value="5">20</option>
-                                            <option value="15" selected="selected">50</option>
-                                            <option value="20">100</option>
-                                            <option value="-1">Все</option>
-                                            </select> на странице
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xs-5">
-                                    <div class="dataTables_info">Показано 1 по 5 из 28</div>
-                                </div>
-                                <div class="col-xs-5">
-                                    <div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← Предыдущая</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Следующая → </a></li></ul></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
+
 
         <!-- page end-->
         </section>
@@ -671,6 +679,9 @@
 <script src="js/select2/select2.js"></script>
 <script src="js/select-init.js"></script>
 
+<script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
+
 
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
@@ -688,6 +699,7 @@
 <script src="js/flot-chart/jquery.flot.resize.js"></script>
 <script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
 
+<script src="js/dynamic_table_init.js"></script>
 
 </body>
 </html>
