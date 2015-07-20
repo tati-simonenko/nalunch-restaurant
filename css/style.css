@@ -5938,7 +5938,7 @@ select.form-control:focus {
 
 /*special for dishes*/
 
-.nl-dishes .col-lg-6 {
+.nl-dishes .col-lg-6:nth-child(1) {
     position: static;
 }
 .nl-dishes .dataTables_length {
