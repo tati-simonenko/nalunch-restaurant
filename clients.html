@@ -152,7 +152,7 @@
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="index.html"><i class=" fa fa-suitcase"></i>Профиль</a></li>
+                <li><a href="profile.html"><i class=" fa fa-suitcase"></i>Профиль</a></li>
                 <li><a href="index.html"><i class="fa fa-key"></i>Выйти из профиля</a></li>
             </ul>
         </li>
@@ -233,26 +233,22 @@
                          </span>
                     </header>
                     <div class="panel-body">
-                    <div class="row nl-dishes-search">
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 tracsations-dates nl-tracsations-dates">Выберите даты</label>
-                                        <div class="col-md-9 transaction-range">
-                                            <div class="input-group input-large " data-date="13/07/2013" data-date-format="mm/dd/yyyy">
-                                                <input type="text" class="form-control dpd1" name="from">
-                                                <span class="input-group-addon">по</span>
-                                                <input type="text" class="form-control dpd2" name="to">
-                                            </div>
-                                            
+                        <div class="nl-filter-row">
+                            <div class="nl-filter-date">
+                                <div class="form-group">
+                                    <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
+                                    <div class="transaction-range">
+                                        <div class="input-group input-large " data-date="06/16/2015" data-date-format="mm/dd/yyyy">
+                                            <input type="text" class="form-control dpd1" name="from" value="01/16/2015">
+                                            <span class="input-group-addon">по</span>
+                                            <input type="text" class="form-control dpd2" name="to" value="06/16/2015">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="dataTables_filter--clients">
                                         
                                     </div>
                                 </div>
-                                <div class="col-xs-2 align-right nl-dishes-search__tools">
+                            </div>
+                            <div class="nl-filter-place">
+                                 <div class="align-right nl-dishes-search__tools">
                                      <button class="btn btn-default dropdown-toggle nl-dishes-tools__toggle" data-toggle="dropdown">Экспортировать <i class="fa fa-angle-down"></i>
                                     </button>
                                     <ul class="dropdown-menu pull-right">
@@ -261,7 +257,10 @@
                                         <li><a href="#">В Excel</a></li>
                                     </ul>
                                 </div>
+
                             </div>
+                        </div>
+                    
                     <div class="adv-table">
                     <table  class="display table table-bordered table-striped" id="dynamic-table">
                     <thead>
